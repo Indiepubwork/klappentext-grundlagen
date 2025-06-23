@@ -145,15 +145,7 @@ p {
   text-align: justify;
 }
 
-/* Erster Paragraph bekommt Drop-Cap Effekt */
-p:first-of-type::first-letter {
-  font-size: 3.2em;
-  float: left;
-  line-height: 0.9;
-  margin: 8px 8px 0 0;
-  color: var(--accent-gold);
-  font-weight: bold;
-}
+/* Drop-Cap entfernt - Firefox Kompatibilität */
 
 ul, ol {
   margin-left: 30px;
@@ -230,7 +222,5 @@ footer {
     font-size: 1.1em;
   }
   
-  p:first-of-type::first-letter {
-    font-size: 2.5em;
-  }
+  /* Drop-Cap entfernt */
 }
